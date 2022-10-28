@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+img{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-direction: right;
+}
+nav{
+    display: none;
+}
+.arrow{
+    float: right;
+}
+a:hover{
+    background-color: aquamarine;
+}
+  a:active{
+    height: 20px;
+    width: 20px;
+    background-color: #0CB1C4;
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
